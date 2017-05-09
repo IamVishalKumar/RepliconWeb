@@ -1,0 +1,13 @@
+﻿<div ng-controller="ProductController">
+    <h2>Product Details</h2>
+    <div class="row">
+        <div class="col-lg-10"></div>
+        <div class="col-lg-2">
+            <label><h3>Cart:{{addedToCart}}</h3></label>
+            <a href="#/Checkout">Checkout</a>
+        </div>
+    </div>
+    <br />
+
+    <div ui-grid="gridOptions" ui-grid-edit ui-grid-cellNav class="grid"></div>
+</div>

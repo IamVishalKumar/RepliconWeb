@@ -1,0 +1,10 @@
+﻿<div ng-controller="EmployeeController">
+    <h2>Employee Details</h2>
+    <br />
+    <div class="form-inline">
+        <label>Filter by Employee Type: </label>
+        <input type="text" class="form-control" ng-change="refreshData()" placeholder="Employee Type" ng-model="searchText">
+    </div>
+    <br />
+    <div ui-grid="gridOptions" ui-grid-edit ui-grid-cellNav class="grid"></div>
+</div>
